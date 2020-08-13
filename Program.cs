@@ -14,6 +14,7 @@ namespace StoreManagement
         [STAThread]
         static void Main()
         {
+            //Git Commit And Push Test
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
