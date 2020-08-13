@@ -8,21 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using System.Windows.Controls;
 
 namespace StoreManagement.UserControls
 {
-    public partial class TableManagementUC 
+    public partial class TableManagementUC : UserControl
     {
-
-
         public TableManagementUC()
         {
             InitializeComponent();
         }
 
-      
-
+       
 
         private void TableManagementUC_Load(object sender, EventArgs e)
         {
@@ -32,7 +28,6 @@ namespace StoreManagement.UserControls
         private void table1_Click(object sender, EventArgs e)
         {
             tableText.Text = ("1번 테이블");
-            
         }
 
         private void button2_Click(object sender, EventArgs e)

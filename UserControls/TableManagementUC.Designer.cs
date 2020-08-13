@@ -44,9 +44,7 @@
             this.table6 = new System.Windows.Forms.Button();
             this.table1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableText = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // table15
@@ -202,48 +200,25 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Location = new System.Drawing.Point(816, 24);
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(816, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 434);
+            this.panel1.Size = new System.Drawing.Size(10, 485);
             this.panel1.TabIndex = 30;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(926, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // tableText
             // 
             this.tableText.AutoSize = true;
-            this.tableText.Location = new System.Drawing.Point(864, 24);
+            this.tableText.Location = new System.Drawing.Point(857, 34);
             this.tableText.Name = "tableText";
-            this.tableText.Size = new System.Drawing.Size(69, 12);
-            this.tableText.TabIndex = 32;
-            this.tableText.Text = "테이블 번호";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Firebrick;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(861, 349);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 109);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.tableText.Size = new System.Drawing.Size(41, 12);
+            this.tableText.TabIndex = 31;
+            this.tableText.Text = "텍스트";
             // 
             // TableManagementUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.tableText);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.table15);
             this.Controls.Add(this.table10);
@@ -262,7 +237,6 @@
             this.Controls.Add(this.table1);
             this.Name = "TableManagementUC";
             this.Size = new System.Drawing.Size(1217, 485);
-            this.Load += new System.EventHandler(this.TableManagementUC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,8 +260,6 @@
         private System.Windows.Forms.Button table6;
         private System.Windows.Forms.Button table1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label tableText;
-        private System.Windows.Forms.Button button2;
     }
 }

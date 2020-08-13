@@ -267,8 +267,8 @@
             // 
             // tableManagementUC1
             // 
-            this.tableManagementUC1.Location = new System.Drawing.Point(3, 0);
-            this.tableManagementUC1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableManagementUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
             this.tableManagementUC1.Name = "tableManagementUC1";
             this.tableManagementUC1.Size = new System.Drawing.Size(1217, 485);
             this.tableManagementUC1.TabIndex = 5;
