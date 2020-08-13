@@ -8,11 +8,12 @@ namespace StoreManagement
 {
     class TableInfo
     {
+        public string tableName { get; set; }
         public int tableNumber { get; set; }
         public int price { get; set; }
-        public int PeopleNumber { get; set; }
+        public int kidNumber { get; set; }
+        public int adultNumber { get; set; }
         public DateTime inTime { get; set; }
         public DateTime outTime { get; set; }
-
     }
 }
