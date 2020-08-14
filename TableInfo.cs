@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StoreManagement
 {
-    class TableInfo
+    public class TableInfo
     {
         public string tableName { get; set; }
         public int tableNumber { get; set; }
@@ -15,5 +15,14 @@ namespace StoreManagement
         public int adultNumber { get; set; }
         public DateTime inTime { get; set; }
         public DateTime outTime { get; set; }
+        public int check { get; set; }
+
+        public TableInfo()
+        {
+            this.check = 0;
+        }
+
+
+        
     }
 }

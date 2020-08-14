@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.table15 = new System.Windows.Forms.Button();
             this.table10 = new System.Windows.Forms.Button();
             this.table5 = new System.Windows.Forms.Button();
@@ -45,20 +46,21 @@
             this.table1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_action = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_cancel = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button_adult_up = new System.Windows.Forms.Button();
+            this.button_kid_up = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.button_adult_down = new System.Windows.Forms.Button();
+            this.button_kid_down = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label_last = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // table15
@@ -69,7 +71,6 @@
             this.table15.Name = "table15";
             this.table15.Size = new System.Drawing.Size(120, 114);
             this.table15.TabIndex = 29;
-            this.table15.Text = "테이블 15번";
             this.table15.UseVisualStyleBackColor = false;
             this.table15.Click += new System.EventHandler(this.table15_Click);
             // 
@@ -81,7 +82,6 @@
             this.table10.Name = "table10";
             this.table10.Size = new System.Drawing.Size(120, 114);
             this.table10.TabIndex = 28;
-            this.table10.Text = "테이블 10번";
             this.table10.UseVisualStyleBackColor = false;
             this.table10.Click += new System.EventHandler(this.table10_Click);
             // 
@@ -93,7 +93,6 @@
             this.table5.Name = "table5";
             this.table5.Size = new System.Drawing.Size(120, 114);
             this.table5.TabIndex = 27;
-            this.table5.Text = "테이블 5번";
             this.table5.UseVisualStyleBackColor = false;
             this.table5.Click += new System.EventHandler(this.table5_Click);
             // 
@@ -105,7 +104,6 @@
             this.table14.Name = "table14";
             this.table14.Size = new System.Drawing.Size(120, 114);
             this.table14.TabIndex = 26;
-            this.table14.Text = "테이블 14번";
             this.table14.UseVisualStyleBackColor = false;
             this.table14.Click += new System.EventHandler(this.table14_Click);
             // 
@@ -117,7 +115,6 @@
             this.table9.Name = "table9";
             this.table9.Size = new System.Drawing.Size(120, 114);
             this.table9.TabIndex = 25;
-            this.table9.Text = "테이블 9번";
             this.table9.UseVisualStyleBackColor = false;
             this.table9.Click += new System.EventHandler(this.table9_Click);
             // 
@@ -129,7 +126,6 @@
             this.table4.Name = "table4";
             this.table4.Size = new System.Drawing.Size(120, 114);
             this.table4.TabIndex = 24;
-            this.table4.Text = "테이블 4번";
             this.table4.UseVisualStyleBackColor = false;
             this.table4.Click += new System.EventHandler(this.table4_Click);
             // 
@@ -141,7 +137,6 @@
             this.table13.Name = "table13";
             this.table13.Size = new System.Drawing.Size(120, 114);
             this.table13.TabIndex = 23;
-            this.table13.Text = "테이블 13번";
             this.table13.UseVisualStyleBackColor = false;
             this.table13.Click += new System.EventHandler(this.table13_Click);
             // 
@@ -153,7 +148,6 @@
             this.table8.Name = "table8";
             this.table8.Size = new System.Drawing.Size(120, 114);
             this.table8.TabIndex = 22;
-            this.table8.Text = "테이블 8번";
             this.table8.UseVisualStyleBackColor = false;
             this.table8.Click += new System.EventHandler(this.table8_Click);
             // 
@@ -165,7 +159,7 @@
             this.table3.Name = "table3";
             this.table3.Size = new System.Drawing.Size(120, 114);
             this.table3.TabIndex = 21;
-            this.table3.Text = "테이블 3번";
+            this.table3.Text = "\r\n";
             this.table3.UseVisualStyleBackColor = false;
             this.table3.Click += new System.EventHandler(this.table3_Click);
             // 
@@ -177,7 +171,6 @@
             this.table12.Name = "table12";
             this.table12.Size = new System.Drawing.Size(120, 114);
             this.table12.TabIndex = 20;
-            this.table12.Text = "테이블 12번";
             this.table12.UseVisualStyleBackColor = false;
             this.table12.Click += new System.EventHandler(this.table12_Click);
             // 
@@ -189,7 +182,6 @@
             this.table7.Name = "table7";
             this.table7.Size = new System.Drawing.Size(120, 114);
             this.table7.TabIndex = 19;
-            this.table7.Text = "테이블 7번";
             this.table7.UseVisualStyleBackColor = false;
             this.table7.Click += new System.EventHandler(this.table7_Click);
             // 
@@ -201,7 +193,6 @@
             this.table2.Name = "table2";
             this.table2.Size = new System.Drawing.Size(120, 114);
             this.table2.TabIndex = 18;
-            this.table2.Text = "테이블 2번";
             this.table2.UseVisualStyleBackColor = false;
             this.table2.Click += new System.EventHandler(this.table2_Click);
             // 
@@ -213,7 +204,6 @@
             this.table11.Name = "table11";
             this.table11.Size = new System.Drawing.Size(120, 114);
             this.table11.TabIndex = 17;
-            this.table11.Text = "테이블 11번";
             this.table11.UseVisualStyleBackColor = false;
             this.table11.Click += new System.EventHandler(this.table11_Click);
             // 
@@ -225,7 +215,6 @@
             this.table6.Name = "table6";
             this.table6.Size = new System.Drawing.Size(120, 114);
             this.table6.TabIndex = 16;
-            this.table6.Text = "테이블 6번";
             this.table6.UseVisualStyleBackColor = false;
             this.table6.Click += new System.EventHandler(this.table6_Click);
             // 
@@ -238,7 +227,6 @@
             this.table1.Name = "table1";
             this.table1.Size = new System.Drawing.Size(120, 114);
             this.table1.TabIndex = 15;
-            this.table1.Text = "테이블 1번";
             this.table1.UseVisualStyleBackColor = false;
             this.table1.Click += new System.EventHandler(this.table1_Click);
             // 
@@ -266,20 +254,21 @@
             this.button_action.UseVisualStyleBackColor = false;
             this.button_action.Click += new System.EventHandler(this.button_action_Click);
             // 
-            // button1
+            // button_cancel
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(823, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 88);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "결제취소";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_cancel.BackColor = System.Drawing.Color.Firebrick;
+            this.button_cancel.FlatAppearance.BorderSize = 0;
+            this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_cancel.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_cancel.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_cancel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_cancel.Location = new System.Drawing.Point(823, 283);
+            this.button_cancel.Name = "button_cancel";
+            this.button_cancel.Size = new System.Drawing.Size(116, 88);
+            this.button_cancel.TabIndex = 34;
+            this.button_cancel.Text = "취소";
+            this.button_cancel.UseVisualStyleBackColor = false;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button2
             // 
@@ -293,40 +282,39 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 88);
             this.button2.TabIndex = 35;
-            this.button2.Text = "지정";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // button_adult_up
             // 
-            this.button5.BackColor = System.Drawing.Color.Firebrick;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(939, 371);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 88);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "성인 +1";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button_action_Click);
+            this.button_adult_up.BackColor = System.Drawing.Color.Firebrick;
+            this.button_adult_up.FlatAppearance.BorderSize = 0;
+            this.button_adult_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_adult_up.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_adult_up.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_adult_up.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_adult_up.Location = new System.Drawing.Point(939, 371);
+            this.button_adult_up.Name = "button_adult_up";
+            this.button_adult_up.Size = new System.Drawing.Size(116, 88);
+            this.button_adult_up.TabIndex = 33;
+            this.button_adult_up.Text = "성인 +1";
+            this.button_adult_up.UseVisualStyleBackColor = false;
+            this.button_adult_up.Click += new System.EventHandler(this.button_adult_up_Click);
             // 
-            // button6
+            // button_kid_up
             // 
-            this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(939, 283);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(116, 88);
-            this.button6.TabIndex = 34;
-            this.button6.Text = "아동 +1";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button_kid_up.BackColor = System.Drawing.Color.Maroon;
+            this.button_kid_up.FlatAppearance.BorderSize = 0;
+            this.button_kid_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_kid_up.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_kid_up.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_kid_up.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_kid_up.Location = new System.Drawing.Point(939, 283);
+            this.button_kid_up.Name = "button_kid_up";
+            this.button_kid_up.Size = new System.Drawing.Size(116, 88);
+            this.button_kid_up.TabIndex = 34;
+            this.button_kid_up.Text = "아동 +1";
+            this.button_kid_up.UseVisualStyleBackColor = false;
+            this.button_kid_up.Click += new System.EventHandler(this.button_kid_up_Click);
             // 
             // button7
             // 
@@ -342,36 +330,37 @@
             this.button7.TabIndex = 35;
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // button_adult_down
             // 
-            this.button10.BackColor = System.Drawing.Color.Maroon;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.Location = new System.Drawing.Point(1055, 371);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(116, 88);
-            this.button10.TabIndex = 33;
-            this.button10.Text = "성인 -1";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button_action_Click);
+            this.button_adult_down.BackColor = System.Drawing.Color.Maroon;
+            this.button_adult_down.FlatAppearance.BorderSize = 0;
+            this.button_adult_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_adult_down.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_adult_down.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_adult_down.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_adult_down.Location = new System.Drawing.Point(1055, 371);
+            this.button_adult_down.Name = "button_adult_down";
+            this.button_adult_down.Size = new System.Drawing.Size(116, 88);
+            this.button_adult_down.TabIndex = 33;
+            this.button_adult_down.Text = "성인 -1";
+            this.button_adult_down.UseVisualStyleBackColor = false;
+            this.button_adult_down.Click += new System.EventHandler(this.button_adult_down_Click);
             // 
-            // button11
+            // button_kid_down
             // 
-            this.button11.BackColor = System.Drawing.Color.Firebrick;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.ForeColor = System.Drawing.SystemColors.Control;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.Location = new System.Drawing.Point(1055, 283);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(116, 88);
-            this.button11.TabIndex = 34;
-            this.button11.Text = "아동 -1";
-            this.button11.UseVisualStyleBackColor = false;
+            this.button_kid_down.BackColor = System.Drawing.Color.Firebrick;
+            this.button_kid_down.FlatAppearance.BorderSize = 0;
+            this.button_kid_down.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_kid_down.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_kid_down.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_kid_down.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_kid_down.Location = new System.Drawing.Point(1055, 283);
+            this.button_kid_down.Name = "button_kid_down";
+            this.button_kid_down.Size = new System.Drawing.Size(116, 88);
+            this.button_kid_down.TabIndex = 34;
+            this.button_kid_down.Text = "아동 -1";
+            this.button_kid_down.UseVisualStyleBackColor = false;
+            this.button_kid_down.Click += new System.EventHandler(this.button_kid_down_Click);
             // 
             // button12
             // 
@@ -411,13 +400,13 @@
             this.panel4.Size = new System.Drawing.Size(10, 173);
             this.panel4.TabIndex = 30;
             // 
-            // panel6
+            // panel9
             // 
-            this.panel6.BackColor = System.Drawing.Color.Firebrick;
-            this.panel6.Location = new System.Drawing.Point(1161, 12);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 174);
-            this.panel6.TabIndex = 31;
+            this.panel9.BackColor = System.Drawing.Color.Firebrick;
+            this.panel9.Location = new System.Drawing.Point(1161, 12);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 174);
+            this.panel9.TabIndex = 31;
             // 
             // panel8
             // 
@@ -433,26 +422,32 @@
             this.label_last.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_last.Location = new System.Drawing.Point(862, 40);
             this.label_last.Name = "label_last";
-            this.label_last.Size = new System.Drawing.Size(48, 16);
+            this.label_last.Size = new System.Drawing.Size(206, 16);
             this.label_last.TabIndex = 36;
-            this.label_last.Text = "Hello";
+            this.label_last.Text = "Hello! Welcome to VIPS.";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // TableManagementUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.label_last);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button_kid_down);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button_kid_up);
+            this.Controls.Add(this.button_adult_down);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_adult_up);
+            this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_action);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -497,19 +492,20 @@
         private System.Windows.Forms.Button table1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button_action;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button_adult_up;
+        private System.Windows.Forms.Button button_kid_up;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button_adult_down;
+        private System.Windows.Forms.Button button_kid_down;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label_last;
+        private System.Windows.Forms.Timer timer1;
     }
 }
