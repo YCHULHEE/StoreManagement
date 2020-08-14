@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoreManagement.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,19 @@ namespace StoreManagement
         public Main()
         {
             InitializeComponent();
+            Customer_List n = new Customer_List();
+            n.Show();
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

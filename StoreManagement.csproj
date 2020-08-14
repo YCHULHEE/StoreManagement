@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{95B48110-D6FC-4AFD-949C-3A50AB59DE19}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>StoreManagement</RootNamespace>
     <AssemblyName>StoreManagement</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataManager.cs" />
     <Compile Include="Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,17 +60,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TableInfo.cs" />
+    <Compile Include="UserControls\Customer_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Customer_List.Designer.cs">
+      <DependentUpon>Customer_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TableManagementUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\TableManagementUC.Designer.cs">
       <DependentUpon>TableManagementUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
@@ -79,9 +84,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\Customer_List.resx">
+      <DependentUpon>Customer_List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TableManagementUC.resx">
       <DependentUpon>TableManagementUC.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Customer.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

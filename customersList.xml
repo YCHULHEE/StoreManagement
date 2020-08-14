@@ -1,0 +1,9 @@
+<Customers>
+<customer>
+     <name></name>
+     <sex></sex>
+     <phonenumber></phonenumber>
+     <birthday></birthday>
+     <regdate></regdate>
+</customer>
+</Customers>

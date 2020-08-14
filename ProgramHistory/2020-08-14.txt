@@ -1,0 +1,13 @@
+[2020-08-14 11:35:09.261]   위치: System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   위치: System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   위치: System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   위치: System.Xml.XmlTextReaderImpl.ParseEndElement()
+   위치: System.Xml.XmlTextReaderImpl.ParseElementContent()
+   위치: System.Xml.XmlTextReaderImpl.Read()
+   위치: System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   위치: System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   위치: System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   위치: System.Xml.Linq.XElement.Load(XmlReader reader, LoadOptions options)
+   위치: System.Xml.Linq.XElement.Parse(String text, LoadOptions options)
+   위치: System.Xml.Linq.XElement.Parse(String text)
+   위치: StoreManagement.DataManager.Load_Customers() 파일 C:\Git_Hub\StoreManagement\DataManager.cs:줄 25

@@ -42,9 +42,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tableManagementUC1 = new StoreManagement.UserControls.TableManagementUC();
+            this.customer_List1 = new StoreManagement.UserControls.Customer_List();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1217, 129);
+            this.panel1.Size = new System.Drawing.Size(1528, 129);
             this.panel1.TabIndex = 1;
             // 
             // panel4
@@ -80,7 +79,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1217, 55);
+            this.panel4.Size = new System.Drawing.Size(1528, 55);
             this.panel4.TabIndex = 3;
             // 
             // panel3
@@ -93,10 +92,10 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Location = new System.Drawing.Point(0, 54);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1217, 76);
+            this.panel3.Size = new System.Drawing.Size(1528, 75);
             this.panel3.TabIndex = 3;
             // 
             // button8
@@ -124,6 +123,7 @@
             this.button7.TabIndex = 4;
             this.button7.Text = "회원 관리";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
@@ -177,10 +177,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 607);
+            this.panel2.Location = new System.Drawing.Point(0, 793);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1217, 102);
+            this.panel2.Size = new System.Drawing.Size(1528, 102);
             this.panel2.TabIndex = 2;
             // 
             // panel5
@@ -192,29 +192,18 @@
             this.panel5.Location = new System.Drawing.Point(0, 129);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1217, 478);
+            this.panel5.Size = new System.Drawing.Size(1528, 664);
             this.panel5.TabIndex = 3;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.tableManagementUC1);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Controls.Add(this.customer_List1);
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1217, 478);
+            this.panel6.Size = new System.Drawing.Size(1327, 598);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(758, 217);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(8, 8);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -225,19 +214,19 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // tableManagementUC1
+            // customer_List1
             // 
-            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
-            this.tableManagementUC1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tableManagementUC1.Name = "tableManagementUC1";
-            this.tableManagementUC1.Size = new System.Drawing.Size(1217, 478);
-            this.tableManagementUC1.TabIndex = 2;
+            this.customer_List1.Location = new System.Drawing.Point(12, 8);
+            this.customer_List1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customer_List1.Name = "customer_List1";
+            this.customer_List1.Size = new System.Drawing.Size(1256, 570);
+            this.customer_List1.TabIndex = 2;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 709);
+            this.ClientSize = new System.Drawing.Size(1528, 895);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -271,8 +260,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button5;
-        private UserControls.TableManagementUC tableManagementUC1;
+        private UserControls.Customer_List customer_List1;
     }
 }
 
