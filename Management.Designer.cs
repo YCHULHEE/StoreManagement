@@ -46,7 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.tableManagementUC1 = new StoreManagement.UserControls.TableManagementUC();
+            this.reservationUC11 = new StoreManagement.UserControls.ReservationUC();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -177,7 +177,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.tableManagementUC1);
+            this.panel6.Controls.Add(this.reservationUC11);
             this.panel6.Controls.Add(this.button9);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.button6);
@@ -265,14 +265,13 @@
             this.button5.Text = "예약 관리";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // tableManagementUC1
+            // reservationUC11
             // 
-            this.tableManagementUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
-            this.tableManagementUC1.Name = "tableManagementUC1";
-            this.tableManagementUC1.Size = new System.Drawing.Size(1217, 485);
-            this.tableManagementUC1.TabIndex = 5;
-       
+            this.reservationUC11.Location = new System.Drawing.Point(0, 0);
+            this.reservationUC11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.reservationUC11.Name = "reservationUC11";
+            this.reservationUC11.Size = new System.Drawing.Size(1217, 485);
+            this.reservationUC11.TabIndex = 5;
             // 
             // Main
             // 
@@ -316,6 +315,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private UserControls.TableManagementUC tableManagementUC1;
+        private UserControls.ReservationUC reservationUC11;
     }
 }
 

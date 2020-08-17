@@ -15,6 +15,7 @@ namespace StoreManagement
         public Main()
         {
             InitializeComponent();
+
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)

@@ -24,6 +24,7 @@ namespace StoreManagement.UserControls
         public TableManagementUC()
         {
             InitializeComponent();
+            DataManager.Load_TableInfo();
             for (int i = 0; i < 15; i++)
             {
                 tb[i] = new TableInfo();
@@ -241,7 +242,45 @@ namespace StoreManagement.UserControls
 
         private void button_action_Click(object sender, EventArgs e)
         {
-           
+            if (MessageBox.Show("결제하시겠습니까?", "결제", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                // 네
+                if (temp.tableName.Trim() != "")
+                {
+                    try
+                    {
+                        temp.outTime = DateTime.Now;
+                        DataManager.TableInfos.Add(temp);
+                        DataManager.Save_TableInfo();
+                        foreach (var item in Controls)
+                        {
+                            if (item is Button)
+                            {
+                                if ((item as Button).Name == temp.tableName)
+                                {
+                                    for (int i = 0; i < 15; i++)
+                                    {
+                                        if (temp.tableName == tb[i].tableName)
+                                        {
+                                            tb[i] = new TableInfo();
+                                            tb[i].tableNumber = i + 1;
+                                            (item as Button).Text = "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception except)
+                    {
+                        MessageBox.Show(except.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("누락된 테이블 정보가 있습니다.");
+                }
+            }
         }
 
         private void tableText_Click(object sender, EventArgs e)
