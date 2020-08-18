@@ -23,6 +23,25 @@ namespace StoreManagement
 
         }
 
+        private void button_reservation_Click(object sender, EventArgs e)
+        {
+            reservationUC1.Visible = true;
+            customer_List1.Visible = false;
+            tableManagementUC1.Visible = false;
+        }
 
+        private void button_member_Click(object sender, EventArgs e)
+        {
+            reservationUC1.Visible = false;
+            customer_List1.Visible = true;
+            tableManagementUC1.Visible = false;
+        }
+
+        private void button_table_Click(object sender, EventArgs e)
+        {
+            reservationUC1.Visible = false;
+            customer_List1.Visible = false;
+            tableManagementUC1.Visible = true;
+        }
     }
 }

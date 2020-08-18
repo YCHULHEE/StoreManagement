@@ -31,11 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button_set = new System.Windows.Forms.Button();
+            this.button_shutdown = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_grape = new System.Windows.Forms.Button();
+            this.button_member = new System.Windows.Forms.Button();
+            this.button_reservation = new System.Windows.Forms.Button();
+            this.button_table = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -46,8 +48,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.reservationUC11 = new StoreManagement.UserControls.ReservationUC();
+            this.reservationUC1 = new StoreManagement.UserControls.ReservationUC();
+            this.customer_List1 = new StoreManagement.UserControls.Customer_List();
+            this.tableManagementUC1 = new StoreManagement.UserControls.TableManagementUC();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
@@ -68,6 +73,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Firebrick;
+            this.panel4.Controls.Add(this.button_set);
+            this.panel4.Controls.Add(this.button_shutdown);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -75,13 +82,35 @@
             this.panel4.Size = new System.Drawing.Size(1217, 55);
             this.panel4.TabIndex = 3;
             // 
+            // button_set
+            // 
+            this.button_set.FlatAppearance.BorderSize = 0;
+            this.button_set.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_set.Image = ((System.Drawing.Image)(resources.GetObject("button_set.Image")));
+            this.button_set.Location = new System.Drawing.Point(1093, 1);
+            this.button_set.Name = "button_set";
+            this.button_set.Size = new System.Drawing.Size(51, 52);
+            this.button_set.TabIndex = 1;
+            this.button_set.UseVisualStyleBackColor = true;
+            // 
+            // button_shutdown
+            // 
+            this.button_shutdown.FlatAppearance.BorderSize = 0;
+            this.button_shutdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_shutdown.Image = ((System.Drawing.Image)(resources.GetObject("button_shutdown.Image")));
+            this.button_shutdown.Location = new System.Drawing.Point(1148, 1);
+            this.button_shutdown.Name = "button_shutdown";
+            this.button_shutdown.Size = new System.Drawing.Size(51, 52);
+            this.button_shutdown.TabIndex = 0;
+            this.button_shutdown.UseVisualStyleBackColor = true;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Menu;
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button_grape);
+            this.panel3.Controls.Add(this.button_member);
+            this.panel3.Controls.Add(this.button_reservation);
+            this.panel3.Controls.Add(this.button_table);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -91,57 +120,60 @@
             this.panel3.Size = new System.Drawing.Size(1217, 73);
             this.panel3.TabIndex = 3;
             // 
-            // button8
+            // button_grape
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Menu;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(970, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(128, 71);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "결제 관리";
-            this.button8.UseVisualStyleBackColor = false;
+            this.button_grape.BackColor = System.Drawing.SystemColors.Menu;
+            this.button_grape.FlatAppearance.BorderSize = 0;
+            this.button_grape.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_grape.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_grape.Location = new System.Drawing.Point(970, 0);
+            this.button_grape.Name = "button_grape";
+            this.button_grape.Size = new System.Drawing.Size(128, 71);
+            this.button_grape.TabIndex = 4;
+            this.button_grape.Text = "그래프";
+            this.button_grape.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // button_member
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Menu;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(838, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(128, 71);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "회원 관리";
-            this.button7.UseVisualStyleBackColor = false;
+            this.button_member.BackColor = System.Drawing.SystemColors.Menu;
+            this.button_member.FlatAppearance.BorderSize = 0;
+            this.button_member.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_member.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_member.Location = new System.Drawing.Point(838, 0);
+            this.button_member.Name = "button_member";
+            this.button_member.Size = new System.Drawing.Size(128, 71);
+            this.button_member.TabIndex = 4;
+            this.button_member.Text = "회원 관리";
+            this.button_member.UseVisualStyleBackColor = false;
+            this.button_member.Click += new System.EventHandler(this.button_member_Click);
             // 
-            // button4
+            // button_reservation
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Menu;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(707, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 71);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "예약 관리";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button_reservation.BackColor = System.Drawing.SystemColors.Menu;
+            this.button_reservation.FlatAppearance.BorderSize = 0;
+            this.button_reservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_reservation.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reservation.Location = new System.Drawing.Point(707, 0);
+            this.button_reservation.Name = "button_reservation";
+            this.button_reservation.Size = new System.Drawing.Size(128, 71);
+            this.button_reservation.TabIndex = 3;
+            this.button_reservation.Text = "예약 관리";
+            this.button_reservation.UseVisualStyleBackColor = false;
+            this.button_reservation.Click += new System.EventHandler(this.button_reservation_Click);
             // 
-            // button3
+            // button_table
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Menu;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(576, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 71);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "테이블 현황";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button_table.BackColor = System.Drawing.SystemColors.Menu;
+            this.button_table.FlatAppearance.BorderSize = 0;
+            this.button_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_table.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_table.Location = new System.Drawing.Point(576, 0);
+            this.button_table.Name = "button_table";
+            this.button_table.Size = new System.Drawing.Size(128, 71);
+            this.button_table.TabIndex = 2;
+            this.button_table.Text = "테이블 현황";
+            this.button_table.UseVisualStyleBackColor = false;
+            this.button_table.Click += new System.EventHandler(this.button_table_Click);
             // 
             // pictureBox1
             // 
@@ -177,13 +209,9 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.reservationUC11);
-            this.panel6.Controls.Add(this.button9);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.button6);
-            this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.button5);
+            this.panel6.Controls.Add(this.tableManagementUC1);
+            this.panel6.Controls.Add(this.customer_List1);
+            this.panel6.Controls.Add(this.reservationUC1);
             this.panel6.Location = new System.Drawing.Point(0, 131);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
@@ -265,13 +293,32 @@
             this.button5.Text = "예약 관리";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // reservationUC11
+            // reservationUC1
             // 
-            this.reservationUC11.Location = new System.Drawing.Point(0, 0);
-            this.reservationUC11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.reservationUC11.Name = "reservationUC11";
-            this.reservationUC11.Size = new System.Drawing.Size(1217, 485);
-            this.reservationUC11.TabIndex = 5;
+            this.reservationUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reservationUC1.Location = new System.Drawing.Point(0, 0);
+            this.reservationUC1.Name = "reservationUC1";
+            this.reservationUC1.Size = new System.Drawing.Size(1217, 485);
+            this.reservationUC1.TabIndex = 0;
+            this.reservationUC1.Visible = false;
+            // 
+            // customer_List1
+            // 
+            this.customer_List1.BackColor = System.Drawing.Color.White;
+            this.customer_List1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer_List1.Location = new System.Drawing.Point(0, 0);
+            this.customer_List1.Name = "customer_List1";
+            this.customer_List1.Size = new System.Drawing.Size(1217, 485);
+            this.customer_List1.TabIndex = 1;
+            this.customer_List1.Visible = false;
+            // 
+            // tableManagementUC1
+            // 
+            this.tableManagementUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
+            this.tableManagementUC1.Name = "tableManagementUC1";
+            this.tableManagementUC1.Size = new System.Drawing.Size(1217, 485);
+            this.tableManagementUC1.TabIndex = 2;
             // 
             // Main
             // 
@@ -282,15 +329,16 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "VIP";
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -303,10 +351,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_table;
+        private System.Windows.Forms.Button button_grape;
+        private System.Windows.Forms.Button button_member;
+        private System.Windows.Forms.Button button_reservation;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label2;
@@ -314,8 +362,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_set;
+        private System.Windows.Forms.Button button_shutdown;
         private UserControls.TableManagementUC tableManagementUC1;
-        private UserControls.ReservationUC reservationUC11;
+        private UserControls.Customer_List customer_List1;
+        private UserControls.ReservationUC reservationUC1;
     }
 }
 
