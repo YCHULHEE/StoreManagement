@@ -48,9 +48,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.reservationUC1 = new StoreManagement.UserControls.ReservationUC();
-            this.customer_List1 = new StoreManagement.UserControls.Customer_List();
+            this.graphUC1 = new StoreManagement.UserControls.GraphUC();
             this.tableManagementUC1 = new StoreManagement.UserControls.TableManagementUC();
+            this.customer_List1 = new StoreManagement.UserControls.Customer_List();
+            this.reservationUC1 = new StoreManagement.UserControls.ReservationUC();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -132,6 +133,7 @@
             this.button_grape.TabIndex = 4;
             this.button_grape.Text = "그래프";
             this.button_grape.UseVisualStyleBackColor = false;
+            this.button_grape.Click += new System.EventHandler(this.button_grape_Click);
             // 
             // button_member
             // 
@@ -209,6 +211,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.graphUC1);
             this.panel6.Controls.Add(this.tableManagementUC1);
             this.panel6.Controls.Add(this.customer_List1);
             this.panel6.Controls.Add(this.reservationUC1);
@@ -293,14 +296,22 @@
             this.button5.Text = "예약 관리";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // reservationUC1
+            // graphUC1
             // 
-            this.reservationUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reservationUC1.Location = new System.Drawing.Point(0, 0);
-            this.reservationUC1.Name = "reservationUC1";
-            this.reservationUC1.Size = new System.Drawing.Size(1217, 485);
-            this.reservationUC1.TabIndex = 0;
-            this.reservationUC1.Visible = false;
+            this.graphUC1.Location = new System.Drawing.Point(3, 3);
+            this.graphUC1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.graphUC1.Name = "graphUC1";
+            this.graphUC1.Size = new System.Drawing.Size(1211, 467);
+            this.graphUC1.TabIndex = 3;
+            this.graphUC1.Visible = false;
+            // 
+            // tableManagementUC1
+            // 
+            this.tableManagementUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
+            this.tableManagementUC1.Name = "tableManagementUC1";
+            this.tableManagementUC1.Size = new System.Drawing.Size(1217, 485);
+            this.tableManagementUC1.TabIndex = 2;
             // 
             // customer_List1
             // 
@@ -312,13 +323,14 @@
             this.customer_List1.TabIndex = 1;
             this.customer_List1.Visible = false;
             // 
-            // tableManagementUC1
+            // reservationUC1
             // 
-            this.tableManagementUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableManagementUC1.Location = new System.Drawing.Point(0, 0);
-            this.tableManagementUC1.Name = "tableManagementUC1";
-            this.tableManagementUC1.Size = new System.Drawing.Size(1217, 485);
-            this.tableManagementUC1.TabIndex = 2;
+            this.reservationUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reservationUC1.Location = new System.Drawing.Point(0, 0);
+            this.reservationUC1.Name = "reservationUC1";
+            this.reservationUC1.Size = new System.Drawing.Size(1217, 485);
+            this.reservationUC1.TabIndex = 0;
+            this.reservationUC1.Visible = false;
             // 
             // Main
             // 
@@ -367,6 +379,7 @@
         private UserControls.TableManagementUC tableManagementUC1;
         private UserControls.Customer_List customer_List1;
         private UserControls.ReservationUC reservationUC1;
+        private UserControls.GraphUC graphUC1;
     }
 }
 

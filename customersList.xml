@@ -1,0 +1,44 @@
+<Customers>
+<customer>
+     <name></name>
+     <sex></sex>
+     <phonenumber></phonenumber>
+     <birthday></birthday>
+     <regdate>2020-08-17 오후 5:30:26</regdate>
+</customer>
+<customer>
+     <name>윤처리</name>
+     <sex>남</sex>
+     <phonenumber>0103050532</phonenumber>
+     <birthday>19941102</birthday>
+     <regdate>2020-08-17 오후 5:31:32</regdate>
+</customer>
+<customer>
+     <name>뭐야</name>
+     <sex>아아</sex>
+     <phonenumber>아아</phonenumber>
+     <birthday>아아</birthday>
+     <regdate>2020-08-17 오후 5:32:40</regdate>
+</customer>
+<customer>
+     <name>가나다라</name>
+     <sex>남</sex>
+     <phonenumber>0103523</phonenumber>
+     <birthday>남남</birthday>
+     <regdate>2020-08-17 오후 5:33:05</regdate>
+</customer>
+<customer>
+     <name>안녕하세유</name>
+     <sex>121212</sex>
+     <phonenumber>12121</phonenumber>
+     <birthday>1212</birthday>
+     <regdate>2020-08-17 오후 5:40:58</regdate>
+</customer>
+<customer>
+     <name>처리2</name>
+     <sex>1212</sex>
+     <phonenumber>121211212</phonenumber>
+     <birthday>21212</birthday>
+     <regdate>2020-08-17 오후 5:42:28</regdate>
+</customer>
+</Customers>

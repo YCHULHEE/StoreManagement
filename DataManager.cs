@@ -29,13 +29,13 @@ namespace StoreManagement
                 foreach (var item in sXElement.Descendants("tableInfo"))
                 {
                     string tableName = item.Element("tableName").Value;
-                    int tableNumber = int.Parse(item.Element("tableNumber").Value);
-                    int price = int.Parse(item.Element("price").Value);
-                    int kidNumber = int.Parse(item.Element("kidNumber").Value);
-                    int adultNumber = int.Parse(item.Element("adultNumber").Value);
+                    int tableNumber = item.Element("tableNumber").Value == "" ? 0 : int.Parse(item.Element("tableNumber").Value);
+                    int price = item.Element("price").Value == "" ? 0 : int.Parse(item.Element("price").Value);
+                    int kidNumber = item.Element("kidNumber").Value == "" ? 0 : int.Parse(item.Element("kidNumber").Value);
+                    int adultNumber = item.Element("adultNumber").Value == "" ? 0 : int.Parse(item.Element("adultNumber").Value);
                     DateTime temp_inTime = item.Element("inTime").Value == "" ? DateTime.Now : DateTime.Parse(item.Element("inTime").Value); //DateTie.Now 대신 DateTime.Now("yyyy-MM-dd")를 입력하면 프로그램 시작한 시점의 시간이 들어감
                     DateTime temp_outTime = item.Element("outTime").Value == "" ? DateTime.Now : DateTime.Parse(item.Element("outTime").Value); //DateTie.Now 대신 DateTime.Now("yyyy-MM-dd")를 입력하면 프로그램 시작한 시점의 시간이 들어감
-                    int check = int.Parse(item.Element("check").Value);
+                    int check = item.Element("check").Value == "" ? 0 : int.Parse(item.Element("check").Value);
 
                     TableInfo tempTableInfo = new TableInfo()
                     {
@@ -54,7 +54,8 @@ namespace StoreManagement
             }
             catch (Exception exception)
             {
-                MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+                //MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+	    PrintLog("파일이 누락되었습니다! table info" + Environment.NewLine + exception.Message);
                 PrintLog(exception.StackTrace);
                 /*CreateFile_tableinfo();*/
                 Save_TableInfo();
@@ -138,7 +139,8 @@ namespace StoreManagement
             }
             catch (Exception exception)
             {
-                MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+                //MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+                PrintLog("파일이 누락되었습니다! reservation" + Environment.NewLine + exception.Message);
                 PrintLog(exception.StackTrace);
                 CreateFile_Reservations();
                 Save_Reservations();
@@ -218,7 +220,8 @@ namespace StoreManagement
             }
             catch (Exception exception)
             {
-                MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+                //MessageBox.Show("파일이 누락되었습니다!" + Environment.NewLine + exception.Message);
+                PrintLog("파일이 누락되었습니다! customer" + Environment.NewLine + exception.Message);
                 PrintLog(exception.StackTrace);
                 CreateFile_customers_List();
                 Save_Customers();
