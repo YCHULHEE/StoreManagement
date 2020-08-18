@@ -104,6 +104,7 @@
             this.button_shutdown.Size = new System.Drawing.Size(51, 52);
             this.button_shutdown.TabIndex = 0;
             this.button_shutdown.UseVisualStyleBackColor = true;
+            this.button_shutdown.Click += new System.EventHandler(this.button_shutdown_Click);
             // 
             // panel3
             // 
@@ -345,6 +346,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Main";
             this.Text = "VIP";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
