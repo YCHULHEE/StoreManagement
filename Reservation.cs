@@ -15,6 +15,5 @@ namespace winform_reservation
         //public string reservation_phone_time;
         public string mtable_number { get; set; }
         public DateTime RegDate { get; set; }
-
     }
 }

@@ -28,8 +28,6 @@ namespace StoreManagement.UserControls
             chart_price.Series[0].Points.AddXY("일요일", 190);
 
             //chart_price.Series[0].Points[4].Color = Color.DarkRed;
-            chart_price.Series[0].Points[5].Color = Color.Red;
-            chart_price.Series[0].Points[6].Color = Color.Red;
 
             chart_price.Series[1].Points.AddXY("월요일", 50);
             chart_price.Series[1].Points.AddXY("화요일", 70);

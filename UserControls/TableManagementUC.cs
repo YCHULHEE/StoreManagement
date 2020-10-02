@@ -97,6 +97,7 @@ namespace StoreManagement.UserControls
                 table_info.inTime = DateTime.Now;
             }
             table_info.check = 1;
+            table.BackColor = System.Drawing.Color.Gainsboro;
 
             table.Text = ($"{table_info.tableNumber}번 테이블\n입실시간 {table_info.inTime.Hour}시 {table_info.inTime.Minute}분" +
                 $"\n아동 {table_info.kidNumber}명\n성인 {table_info.adultNumber}명\n가격 {table_info.price}원\n");
@@ -265,6 +266,7 @@ namespace StoreManagement.UserControls
                                             tb[i] = new TableInfo();
                                             tb[i].tableNumber = i + 1;
                                             (item as Button).Text = "";
+                                            (item as Button).BackColor = System.Drawing.Color.WhiteSmoke;
                                         }
                                     }
                                 }
@@ -307,6 +309,8 @@ namespace StoreManagement.UserControls
                             if ((item as Button).Name == tb[i].tableName)
                             {
                                 Print_info(tb[i], item as Button);
+                                if(tb[i].check == 0)
+                                    Print_info(tb[i], item as Button);
                             }
                         }
                     }
@@ -345,6 +349,7 @@ namespace StoreManagement.UserControls
                                     tb[i] = new TableInfo();
                                     tb[i].tableNumber = i + 1;
                                     (item as Button).Text = "";
+                                    (item as Button).BackColor = System.Drawing.Color.WhiteSmoke;
                                 }
                             }
                         }
