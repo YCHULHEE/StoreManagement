@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace StoreManagement.UserControls
 {
-    public partial class Customer_List : UserControl
+    public partial class Customer_ListUC : UserControl
     {
         int search_count = 0;
-        public Customer_List()
+        public Customer_ListUC()
         {
             InitializeComponent();
             DataManager.Load_Customers();

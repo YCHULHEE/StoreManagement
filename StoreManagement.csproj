@@ -74,11 +74,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="TableInfo.cs" />
-    <Compile Include="UserControls\Customer_List.cs">
+    <Compile Include="UserControls\Customer_ListUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Customer_List.designer.cs">
-      <DependentUpon>Customer_List.cs</DependentUpon>
+    <Compile Include="UserControls\Customer_ListUC.designer.cs">
+      <DependentUpon>Customer_ListUC.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\GraphUC.cs">
       <SubType>UserControl</SubType>
@@ -110,8 +110,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\Customer_List.resx">
-      <DependentUpon>Customer_List.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Customer_ListUC.resx">
+      <DependentUpon>Customer_ListUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GraphUC.resx">
       <DependentUpon>GraphUC.cs</DependentUpon>

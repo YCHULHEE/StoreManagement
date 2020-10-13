@@ -50,7 +50,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.graphUC1 = new StoreManagement.UserControls.GraphUC();
             this.tableManagementUC1 = new StoreManagement.UserControls.TableManagementUC();
-            this.customer_List1 = new StoreManagement.UserControls.Customer_List();
+            this.customer_List1 = new StoreManagement.UserControls.Customer_ListUC();
             this.reservationUC1 = new StoreManagement.UserControls.ReservationUC();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -378,7 +378,7 @@
         private System.Windows.Forms.Button button_set;
         private System.Windows.Forms.Button button_shutdown;
         private UserControls.TableManagementUC tableManagementUC1;
-        private UserControls.Customer_List customer_List1;
+        private UserControls.Customer_ListUC customer_List1;
         private UserControls.ReservationUC reservationUC1;
         private UserControls.GraphUC graphUC1;
     }

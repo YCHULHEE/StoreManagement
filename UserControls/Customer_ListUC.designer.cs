@@ -1,6 +1,6 @@
 ﻿namespace StoreManagement.UserControls
 {
-    partial class Customer_List
+    partial class Customer_ListUC
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
